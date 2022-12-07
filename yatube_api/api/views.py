@@ -1,7 +1,5 @@
-# TODO:  Напишите свой вариант
-
 from django.shortcuts import get_object_or_404
-from rest_framework import viewsets, permissions, filters
+from rest_framework import viewsets, permissions, filters, mixins
 from rest_framework.pagination import LimitOffsetPagination
 
 from posts.models import Post, Comment, Group, Follow
@@ -9,6 +7,12 @@ from .serializers import (PostSerializer,
                           CommentSerializer, GroupSerializer,
                           FollowSerializer)
 from .permissions import IsAuthorOrReadOnly
+
+
+class CreateListViewSet(mixins.ListModelMixin,
+                        mixins.CreateModelMixin,
+                        viewsets.GenericViewSet):
+    pass
 
 
 class PostViewSet(viewsets.ModelViewSet):
@@ -41,7 +45,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
-class FollowViewSet(viewsets.ModelViewSet):
+class FollowViewSet(CreateListViewSet):
     queryset = Follow.objects.all()
     serializer_class = FollowSerializer
     permission_classes = [permissions.IsAuthenticated]
