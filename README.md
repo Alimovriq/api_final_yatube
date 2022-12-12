@@ -66,6 +66,9 @@ python3 manage.py runserver
 - username - имя пользователя (обязательное поле)
 - password - пароль пользователя (обязательное поле)
 
+![Иллюстрация к получению токена](https://github.com/Alimovriq/api_final_yatube/blob/master/yatube_api/static/2.png)
+
+
 Важно:
 Токен "access" требуется для аутентификации пользователя. Срок действия = 1 день.
 Токен "refresh" требуется для обновления токена "access"
@@ -75,6 +78,10 @@ python3 manage.py runserver
 - text - текст публикации (обязательное поле)
 - image - изображение публикации (необязательное поле)
 - group - сообщество, к которой относится публикация (необязательное поле)
+
+![Иллюстрация к созданию поста №1](https://github.com/Alimovriq/api_final_yatube/blob/master/yatube_api/static/3.png)
+
+![Иллюстрация к созданию поста №2](https://github.com/Alimovriq/api_final_yatube/blob/master/yatube_api/static/4.png)
 
 ### Автор
 Алимов Ринат
