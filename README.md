@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
 [![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)](https://www.django-rest-framework.org/)
-[![sqlite](https://skillicons.dev/icons?i=sqlite)](https://skillicons.dev)]
+[![sqlite](https://skillicons.dev/icons?i=sqlite)](https://sqlite.org/)
 
 ## Описание
 Данный API предоставляет возможность пользоваться функционалом блога не посещая сайт.
