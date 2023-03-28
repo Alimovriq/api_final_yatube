@@ -1,9 +1,13 @@
 # Проект «API для Yatube»
 
-### Описание
+[![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
+[![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)](https://www.django-rest-framework.org/)
+[![sqlite](https://skillicons.dev/icons?i=sqlite)](https://skillicons.dev)]
+
+## Описание
 Данный API предоставляет возможность пользоваться функционалом блога не посещая сайт.
 
-### Функционал
+## Возможности
 - Создание / Просмотр / Редактирование / Удаление постов
 - Создание / Просмотр / Редактирование / Удаление комментариев
 - Подписка на пользователей
@@ -11,6 +15,13 @@
 - Просмотр сообществ
 
 Документация доступна по адресу: ```http://127.0.0.1:8000/redoc```
+
+## Технологии
+ - Python 3.7.13
+ - Django 2.2.16
+ - REST Framework 3.12.4
+ - PyJWT 2.1.0
+ - подробнее см. прилагаемый файл зависимостей requrements.txt
 
 ### Установка
 Клонировать репозиторий и перейти в него в командной строке:
