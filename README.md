@@ -69,7 +69,7 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
-### Примеры
+## Примеры
 Для формирования запросов использовалась программа Postman, доступная по адресу: ```https://www.postman.com/```
 
 ##### 1. Получние токена
